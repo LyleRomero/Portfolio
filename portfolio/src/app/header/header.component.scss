@@ -1,0 +1,64 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  
+    .logo {
+      display: flex;
+      align-items: center;
+  
+      img {
+        height: 50px;
+        margin-right: 1rem;
+      }
+  
+      .brand-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #3abca7;
+      }
+    }
+  
+    .nav-list {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+  
+      li {
+        a {
+          color: #444;
+          text-decoration: none;
+          font-weight: 600;
+          transition: color 0.3s;
+  
+          &:hover {
+            color: #3abca7; /* Color similar al de "HOME" */
+          }
+  
+          &.active {
+            color: #3abca7;
+            text-decoration: underline; /* O otro estilo que prefieras */
+          }
+        }
+  
+        &.contact {
+          a {
+            border: 2px solid #e94560;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            color: #e94560;
+            transition: all 0.3s;
+  
+            &:hover {
+              background-color: #e94560;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+  

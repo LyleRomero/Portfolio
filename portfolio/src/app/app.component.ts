@@ -8,14 +8,13 @@ import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { ToggleMenuDirective } from './togglemenu.directive';
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, HeroComponent, AboutComponent,
     ProjectsComponent, ExperienceComponent, EducationComponent, 
-    ContactComponent, FooterComponent
-  ],
+    ContactComponent, FooterComponent,ToggleMenuDirective ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

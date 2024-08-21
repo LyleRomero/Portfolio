@@ -1,22 +1,36 @@
-<header class="text-gray-600 body-font">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+<header class="text-gray-600 body-font fixed top-0 left-0 right-0 z-50">
+  <div class="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
       <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-        </svg>
-        <span class="ml-3 text-xl">Lyle Romero</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl">Lyle Romero</span>
       </a>
-      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <a class="mr-5 hover:text-gray-900">about</a>
-        <a class="mr-5 hover:text-gray-900">projects</a>
-        <a class="mr-5 hover:text-gray-900">experience</a>
-        <a class="mr-5 hover:text-gray-900">education</a>
-      </nav>
-      <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">contact
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
+      
+      <!-- Botón de menú para dispositivos móviles con la directiva -->
+      <button appToggleMenu class="md:hidden text-gray-600 hover:text-gray-900 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
       </button>
-    </div>
-  </header>
+      
+      <!-- Barra de navegación -->
+      <nav id="menu" class="hidden md:flex md:ml-auto flex flex-wrap text-lg items-center text-base justify-center">
+          <a href="#about" class="mr-5 hover:text-lime-500 hover:border-b-2 hover:border-lime-500">Sobre mi</a>
+          <a href="#portfolio" class="mr-5 hover:text-lime-500 hover:border-b-2 hover:border-lime-500">Portafolio</a>
+          <a href="#experience" class="mr-5 hover:text-lime-500 hover:border-b-2 hover:border-lime-500">Experiencia</a>
+          <a href="#education" class="mr-5 hover:text-lime-500 hover:border-b-2 hover:border-lime-500">Educacion</a>
+      </nav>
+      
+      <!-- Botón de contacto -->
+      <button class="inline-flex items-center text-white bg-indigo-500 border-0 py-1 px-3 focus:outline-none hover:bg-lime-600 rounded text-base mt-4 md:mt-0">
+          contacto
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+      </button>
+  </div>
+</header>
+
+
   
